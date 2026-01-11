@@ -1,53 +1,172 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Exhibits • Due Process Lab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exhibits | Due Process Lab</title>
+  <meta name="description" content="Exhibit index with filenames, dates, and short regulator-ready summaries." />
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Safe fallback styling if styles.css is missing */
+    :root { --ink:#111827; --muted:#6b7280; --line:#e5e7eb; --card:#ffffff; --bg:#f8fafc; --pill:#eef2ff; }
+    body{ margin:0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"; color:var(--ink); background:var(--bg); }
+    .wrap{ max-width:1100px; margin:0 auto; padding:28px 18px 60px; }
+    .topbar{ display:flex; gap:10px; flex-wrap:wrap; margin-bottom:18px; }
+    .pill{ display:inline-block; padding:6px 10px; border:1px solid var(--line); background:#fff; border-radius:999px; color:var(--muted); font-size:13px; }
+    h1{ font-size:38px; line-height:1.1; margin:10px 0 6px; }
+    p.lead{ color:var(--muted); font-size:16px; margin:0 0 18px; max-width:850px; }
+    .nav{ display:flex; gap:10px; flex-wrap:wrap; margin:10px 0 18px; }
+    .nav a{ text-decoration:none; padding:10px 14px; border:1px solid var(--line); border-radius:12px; background:#fff; color:#1d4ed8; font-weight:600; }
+    .card{ background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px; }
+    .grid{ display:grid; grid-template-columns: 1fr; gap:14px; }
+    .note{ font-size:14px; color:var(--muted); }
+    .controls{ display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin:12px 0 8px; }
+    .controls input{ padding:10px 12px; border-radius:12px; border:1px solid var(--line); width:min(520px, 100%); background:#fff; }
+    .controls .small{ font-size:13px; color:var(--muted); }
+    table{ width:100%; border-collapse:collapse; overflow:hidden; }
+    th, td{ text-align:left; padding:12px 10px; border-bottom:1px solid var(--line); vertical-align:top; }
+    th{ font-size:13px; color:var(--muted); font-weight:700; background:#fbfdff; }
+    td{ font-size:14px; }
+    code{ background:#f3f4f6; padding:2px 6px; border-radius:8px; }
+    .tag{ display:inline-block; padding:4px 8px; background:var(--pill); border:1px solid #c7d2fe; border-radius:999px; font-size:12px; color:#3730a3; margin:2px 6px 2px 0; }
+    .muted{ color:var(--muted); }
+    .footer{ margin-top:16px; color:var(--muted); font-size:13px; }
+    .k{ font-weight:700; }
+  </style>
 </head>
 
 <body>
-  <header class="header">
-    <div class="brand">
-      <div>
-        <span class="badge">Public Documentation Portal</span>
-        <h1>Exhibit Index</h1>
-        <p class="subtitle">Public-facing index of exhibit titles and references (summaries only).</p>
-      </div>
+  <div class="wrap">
+    <div class="topbar">
+      <span class="pill">Public Documentation Portal</span>
+      <span class="pill">Exhibit Index</span>
+      <span class="pill">Summaries Only (No sensitive docs)</span>
     </div>
 
-    <nav class="nav" aria-label="Primary">
+    <h1>Exhibits</h1>
+    <p class="lead">
+      This page is a regulator-ready <span class="k">exhibit index</span> (a “map” to the record). It is designed to let a reviewer quickly locate
+      the right file by <span class="k">Exhibit #</span>, <span class="k">date</span>, and a short <span class="k">neutral summary</span>.
+      <br><br>
+      <strong>Privacy:</strong> This site should contain <strong>summaries and references only</strong>. Do not upload sensitive personal data or full primary records here.
+    </p>
+
+    <div class="nav">
       <a href="index.html">Home</a>
       <a href="timeline.html">Timeline</a>
       <a href="issues.html">Issues</a>
       <a href="exhibits.html">Exhibits</a>
       <a href="agencies.html">Agencies</a>
-    </nav>
-  </header>
-
-  <main class="container">
-    <div class="panel">
-      <h2>How to use this page</h2>
-      <p>
-        This is an index for navigation. It is intentionally limited to titles, dates, and short descriptions.
-        Underlying documents are not hosted publicly on this site.
-      </p>
     </div>
 
-    <div class="panel">
-      <h2>Exhibit List (sample structure)</h2>
-      <p class="small">Replace these placeholders with your exhibit numbers, dates, and standardized titles.</p>
-      <hr>
-      <p><strong>Exhibit 01</strong> — [Title] <span class="small">• [Date] • [1–2 line description]</span></p>
-      <p><strong>Exhibit 02</strong> — [Title] <span class="small">• [Date] • [1–2 line description]</span></p>
-      <p><strong>Exhibit 03</strong> — [Title] <span class="small">• [Date] • [1–2 line description]</span></p>
-      <p><strong>Exhibit 04</strong> — [Title] <span class="small">• [Date] • [1–2 line description]</span></p>
-    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="controls">
+          <input id="q" type="search" placeholder="Search exhibits (ex: “Form 5498”, “match”, “ledger”, “options”, “complaint”, “Texas”)…" />
+          <span class="small">Tip: search by Exhibit #, date, filename, agency tag, or keywords.</span>
+        </div>
 
-    <p class="footer">
-      Note: This index is for reference and navigation only. Sensitive documents remain non-public.
-    </p>
-  </main>
+        <div class="note">
+          <strong>How to use:</strong> Keep each filename standardized (date + short title). If you have multiple versions, add “v1/v2” or “revA”.
+        </div>
+
+        <div style="height:10px"></div>
+
+        <table id="exhibitTable" aria-label="Exhibit index table">
+          <thead>
+            <tr>
+              <th style="width:92px">Exhibit #</th>
+              <th style="width:120px">Date</th>
+              <th style="width:220px">Standardized File Name</th>
+              <th style="width:180px">Related Issue / Topic</th>
+              <th style="width:190px">Agency Relevance</th>
+              <th>Public Summary (neutral)</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <!-- ====== EXAMPLE ROWS (replace/edit these) ====== -->
+            <tr>
+              <td><strong>Ex. 1</strong></td>
+              <td>YYYY-MM-DD</td>
+              <td><code>YYYY-MM-DD — Short Title.pdf</code></td>
+              <td><span class="tag">Issue #__</span><span class="tag">Topic</span></td>
+              <td>
+                <span class="tag">SEC</span>
+                <span class="tag">FINRA</span>
+                <span class="tag">TX</span>
+              </td>
+              <td>
+                One-paragraph summary of what the exhibit shows, written factually and without conclusions.
+                Include key numbers/dates when helpful.
+                <div class="muted" style="margin-top:6px;">(Optional: “See also: Ex. __, Ex. __”) </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td><strong>Ex. 2</strong></td>
+              <td>YYYY-MM-DD</td>
+              <td><code>YYYY-MM-DD — Short Title.pdf</code></td>
+              <td><span class="tag">Issue #__</span><span class="tag">Timeline</span></td>
+              <td>
+                <span class="tag">SEC</span>
+                <span class="tag">CFPB/FTC</span>
+                <span class="tag">TX</span>
+              </td>
+              <td>
+                Summary describing the content and why it matters procedurally (e.g., disclosure, account setup, permissions, messaging),
+                without stating legal conclusions.
+              </td>
+            </tr>
+
+            <!-- ====== START ADDING YOUR REAL ROWS BELOW ====== -->
+            <!-- Copy/paste a <tr>…</tr> block for each exhibit. -->
+
+          </tbody>
+        </table>
+
+        <div class="footer">
+          <div><strong>Agency tags (use what applies):</strong> SEC · FINRA · IRS · DOL/EBSA · CFPB/FTC · TX (Texas regulators) · Other</div>
+          <div style="margin-top:8px;">
+            <strong>Good summary formula:</strong> <span class="muted">“Document type + date range + what it shows + key numbers + where it fits in timeline.”</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 style="margin:0 0 8px; font-size:18px;">Fast Add Template</h2>
+        <p class="note" style="margin:0 0 10px;">
+          When you add a new exhibit, copy one row and fill in these fields:
+        </p>
+        <ul class="note" style="margin:0; padding-left:18px;">
+          <li><strong>Exhibit #</strong> (Ex. 12, Ex. 35A, etc.)</li>
+          <li><strong>Date</strong> (use the document date or the capture date)</li>
+          <li><strong>Standardized File Name</strong> (keep consistent)</li>
+          <li><strong>Related Issue</strong> (Issue # + short topic)</li>
+          <li><strong>Agency Relevance</strong> (tags)</li>
+          <li><strong>Public Summary</strong> (2–6 sentences, neutral, factual)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Simple client-side table search (no tracking, no external libraries)
+    (function () {
+      const input = document.getElementById('q');
+      const table = document.getElementById('exhibitTable');
+      const rows = Array.from(table.querySelectorAll('tbody tr'));
+
+      function normalize(s){ return (s || '').toLowerCase().trim(); }
+
+      input.addEventListener('input', function () {
+        const q = normalize(input.value);
+        rows.forEach(row => {
+          const text = normalize(row.innerText);
+          row.style.display = text.includes(q) ? '' : 'none';
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
