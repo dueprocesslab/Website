@@ -1,37 +1,88 @@
-<body> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Due Process Lab</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-<h1>Due Process Lab</h1>
+<body>
+  <header class="header">
+    <div class="brand">
+      <div>
+        <span class="badge">Public Documentation Portal</span>
+        <h1>Due Process Lab</h1>
+        <p class="subtitle">
+          A public documentation site created to preserve records, summarize factual information,
+          and present timelines in a clear, organized, and accessible manner.
+        </p>
+      </div>
+    </div>
 
-<p>
-Due Process Lab is a public documentation site created to preserve records, summarize factual information, and present timelines in a clear, organized, and accessible manner.
-</p>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="issues.html">Issues</a>
+      <a href="exhibits.html">Exhibits</a>
+      <a href="agencies.html">Agencies</a>
+    </nav>
+  </header>
 
-<p>
-The materials presented here are intended to support transparency, accuracy, and responsible review. Content is published for informational purposes only and reflects documented records, source materials, and good-faith summaries.
-</p>
+  <main class="container">
+    <section class="hero">
+      <div class="panel">
+        <h2>Purpose</h2>
+        <p>
+          To preserve the integrity of the record and present information in a manner that supports careful,
+          independent review. Content is published for informational purposes and reflects documented records,
+          source materials, and good-faith summaries.
+        </p>
+      </div>
 
-<div class="box">
-<strong>Scope</strong><br>
-This site may include:
-<ul>
-  <li>Chronological timelines</li>
-  <li>Issue summaries and factual outlines</li>
-  <li>References to source materials</li>
-  <li>Methodology notes regarding organization and review</li>
-</ul>
-</div>
+      <div class="grid" role="list">
+        <a class="card" role="listitem" href="timeline.html">
+          <h3>Chronological Timeline</h3>
+          <p>Key dates and events presented as a factual sequence for quick review.</p>
+          <div class="meta">Recommended starting point</div>
+        </a>
 
-<p>
-Primary documents, sensitive materials, and non-public records are not published on this site. Where appropriate, summaries or references may be provided in lieu of underlying documents.
-</p>
+        <a class="card" role="listitem" href="issues.html">
+          <h3>Issue Summaries</h3>
+          <p>High-level issue statements with links to supporting exhibits and records.</p>
+          <div class="meta">Scannable regulator format</div>
+        </a>
 
-<div class="box">
-<strong>Purpose</strong><br>
-To preserve the integrity of the record and present information in a manner that supports careful, independent review.
-</div>
+        <a class="card" role="listitem" href="exhibits.html">
+          <h3>Exhibit Index</h3>
+          <p>Structured list of exhibits and references (titles, dates, and navigation).</p>
+          <div class="meta">Organized for quick lookup</div>
+        </a>
 
-<p>
-This site may be updated periodically as additional information is organized or clarified.
-</p>
+        <a class="card" role="listitem" href="agencies.html">
+          <h3>Agency Views</h3>
+          <p>Evidence grouped by regulator / standard for targeted review.</p>
+          <div class="meta">SEC • FINRA • IRS • DOL • State</div>
+        </a>
+      </div>
 
+      <hr>
+
+      <div class="panel">
+        <h2>Scope</h2>
+        <p>
+          This site may include: chronological timelines, issue summaries, references to source materials,
+          and methodology notes regarding organization and review. Primary documents, sensitive materials,
+          and non-public records are not published on this site.
+        </p>
+      </div>
+
+      <p class="footer">
+        Tip: If a page link shows 404, it simply means that page hasn’t been created yet. We’ll add them next.
+        Your site will update automatically after each commit.
+      </p>
+    </section>
+  </main>
 </body>
+</html>
+
