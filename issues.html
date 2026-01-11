@@ -8,62 +8,243 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="brand">
-      <div>
-        <span class="badge">Public Documentation Portal</span>
-        <h1>Issue Summaries</h1>
-        <p class="subtitle">High-level issue statements for review (summaries only; no sensitive documents posted).</p>
-      </div>
-    </div>
-
-    <nav class="nav" aria-label="Primary">
-      <a href="index.html">Home</a>
-      <a href="timeline.html">Timeline</a>
-      <a href="issues.html">Issues</a>
-      <a href="exhibits.html">Exhibits</a>
-      <a href="agencies.html">Agencies</a>
-    </nav>
-  </header>
-
-  <main class="container">
-    <div class="panel">
-      <h2>How to use this page</h2>
-      <p>
-        Each issue is written as a neutral summary and may reference exhibits by title/number.
-        Underlying records are maintained separately and are not published here.
+<header class="header">
+  <div class="brand">
+    <div>
+      <span class="badge">Public Documentation Portal</span>
+      <h1>Issue Summaries</h1>
+      <p class="subtitle">
+        High-level, neutral summaries organized for regulator review.
+        No sensitive documents are hosted here—only summaries and exhibit references.
       </p>
     </div>
+  </div>
 
-    <div class="grid" role="list">
-      <div class="card" role="listitem">
-        <h3>Issue 1 — Account Configuration / Permissions</h3>
-        <p>Summary of the observed configuration and any relevant changes over time.</p>
-        <div class="meta">Related exhibits: Exhibit ##, Exhibit ##</div>
-      </div>
+  <nav class="nav" aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="timeline.html">Timeline</a>
+    <a href="issues.html">Issues</a>
+    <a href="exhibits.html">Exhibits</a>
+    <a href="agencies.html">Agencies</a>
+  </nav>
+</header>
 
-      <div class="card" role="listitem">
-        <h3>Issue 2 — Trade Activity and Record Consistency</h3>
-        <p>Summary of differences observed across statements, platform views, and internal records (if applicable).</p>
-        <div class="meta">Related exhibits: Exhibit ##, Exhibit ##</div>
-      </div>
+<main class="container">
 
-      <div class="card" role="listitem">
-        <h3>Issue 3 — Disclosures, Communications, and Support</h3>
-        <p>Summary of relevant communications and efforts to obtain clarification or records.</p>
-        <div class="meta">Related exhibits: Exhibit ##, Exhibit ##</div>
-      </div>
-
-      <div class="card" role="listitem">
-        <h3>Issue 4 — Performance Reporting / Presentation</h3>
-        <p>Summary of how performance was displayed and any inconsistencies observed across views.</p>
-        <div class="meta">Related exhibits: Exhibit ##, Exhibit ##</div>
-      </div>
-    </div>
-
-    <p class="footer">
-      Note: Issue summaries are informational and intended to support careful, independent review.
+  <div class="panel">
+    <h2>How to use this page</h2>
+    <ul>
+      <li><strong>Issue Statement:</strong> what happened (plain-English summary).</li>
+      <li><strong>Why it matters:</strong> compliance / investor-protection relevance (high level).</li>
+      <li><strong>Evidence pointers:</strong> exhibit references (titles or IDs you control).</li>
+      <li><strong>Agency lens:</strong> which reviewer types may care (SEC/FINRA/IRS/DOL/State).</li>
+    </ul>
+    <p class="note">
+      This page is a “map.” Supporting detail lives in Exhibits and Agency pages.
     </p>
-  </main>
+  </div>
+
+  <div class="grid" role="list">
+
+    <a class="card" role="listitem" href="#issue-01">
+      <h3>Issue 1 — Account Setup & Permissions</h3>
+      <p>Unexpected permissions, levels, or settings enabled.</p>
+      <div class="meta">SEC • FINRA</div>
+    </a>
+
+    <a class="card" role="listitem" href="#issue-02">
+      <h3>Issue 2 — Retirement / Tax Handling</h3>
+      <p>IRA coding, tax forms, and retirement-account constraints.</p>
+      <div class="meta">IRS • DOL/EBSA</div>
+    </a>
+
+    <a class="card" role="listitem" href="#issue-03">
+      <h3>Issue 3 — Trading Volume & Behavior</h3>
+      <p>Volume, frequency, and behavioral drivers/UX patterns.</p>
+      <div class="meta">FINRA • SEC</div>
+    </a>
+
+    <a class="card" role="listitem" href="#issue-04">
+      <h3>Issue 4 — Records & Reporting</h3>
+      <p>Statements, ledgers, counts, or discrepancies in reporting.</p>
+      <div class="meta">SEC • FINRA • IRS</div>
+    </a>
+
+    <a class="card" role="listitem" href="#issue-05">
+      <h3>Issue 5 — Customer Support & Disclosures</h3>
+      <p>Conflicting explanations, missing clarity, or delayed response.</p>
+      <div class="meta">SEC • FINRA • State</div>
+    </a>
+
+    <a class="card" role="listitem" href="#issue-06">
+      <h3>Issue 6 — Incentives / Match / Promotions</h3>
+      <p>Promotions, match rates, eligibility, and statement consistency.</p>
+      <div class="meta">State • SEC</div>
+    </a>
+
+  </div>
+
+  <hr />
+
+  <!-- ===================== -->
+  <!-- ISSUE DETAILS SECTIONS -->
+  <!-- ===================== -->
+
+  <section id="issue-01" class="section">
+    <h2>Issue 1 — Account Setup & Permissions</h2>
+    <h3>Issue statement</h3>
+    <p>
+      Placeholder: summarize the specific account settings or permission levels that were enabled,
+      when, and why this is disputed.
+    </p>
+
+    <h3>Why it matters</h3>
+    <ul>
+      <li>Investor protection / suitability expectations</li>
+      <li>Supervision and controls over account configuration</li>
+      <li>Clear disclosures and auditability</li>
+    </ul>
+
+    <h3>Evidence pointers</h3>
+    <ul>
+      <li>Exhibit: [Add exhibit title/ID here]</li>
+      <li>Exhibit: [Add exhibit title/ID here]</li>
+      <li>Exhibit: [Add exhibit title/ID here]</li>
+    </ul>
+
+    <p class="note">Agency lens: SEC / FINRA</p>
+  </section>
+
+  <section id="issue-02" class="section">
+    <h2>Issue 2 — Retirement / Tax Handling</h2>
+    <h3>Issue statement</h3>
+    <p>
+      Placeholder: summarize IRA-related handling, coding, tax documentation, reporting forms,
+      or retirement-account restrictions that are disputed.
+    </p>
+
+    <h3>Why it matters</h3>
+    <ul>
+      <li>Retirement account compliance expectations</li>
+      <li>Tax reporting accuracy</li>
+      <li>Clear chain-of-custody for retirement assets</li>
+    </ul>
+
+    <h3>Evidence pointers</h3>
+    <ul>
+      <li>Exhibit: [Add exhibit title/ID here]</li>
+      <li>Exhibit: [Add exhibit title/ID here]</li>
+      <li>Exhibit: [Add exhibit title/ID here]</li>
+    </ul>
+
+    <p class="note">Agency lens: IRS / DOL-EBSA</p>
+  </section>
+
+  <section id="issue-03" class="section">
+    <h2>Issue 3 — Trading Volume & Behavior</h2>
+    <h3>Issue statement</h3>
+    <p>
+      Placeholder: summarize the volume/frequency concerns, the time window, and any claimed
+      drivers (UX, nudges, approvals, or incentives).
+    </p>
+
+    <h3>Why it matters</h3>
+    <ul>
+      <li>Suitability / best-interest concerns (high-level)</li>
+      <li>Supervision and controls</li>
+      <li>Potential consumer-protection impacts</li>
+    </ul>
+
+    <h3>Evidence pointers</h3>
+    <ul>
+      <li>Exhibit: [Add exhibit title/ID here]</li>
+      <li>Exhibit: [Add exhibit title/ID here]</li>
+      <li>Exhibit: [Add exhibit title/ID here]</li>
+    </ul>
+
+    <p class="note">Agency lens: FINRA / SEC</p>
+  </section>
+
+  <section id="issue-04" class="section">
+    <h2>Issue 4 — Records & Reporting</h2>
+    <h3>Issue statement</h3>
+    <p>
+      Placeholder: summarize any differences between statements, ledgers, counts, balances,
+      or other reporting fields. Keep it factual and dated.
+    </p>
+
+    <h3>Why it matters</h3>
+    <ul>
+      <li>Books and records expectations</li>
+      <li>Accuracy of customer reporting</li>
+      <li>Auditability and transparency</li>
+    </ul>
+
+    <h3>Evidence pointers</h3>
+    <ul>
+      <li>Exhibit: [Add exhibit title/ID here]</li>
+      <li>Exhibit: [Add exhibit title/ID here]</li>
+      <li>Exhibit: [Add exhibit title/ID here]</li>
+    </ul>
+
+    <p class="note">Agency lens: SEC / FINRA / IRS</p>
+  </section>
+
+  <section id="issue-05" class="section">
+    <h2>Issue 5 — Customer Support & Disclosures</h2>
+    <h3>Issue statement</h3>
+    <p>
+      Placeholder: summarize the support communications, any contradictions, timeline of responses,
+      and the specific information you requested.
+    </p>
+
+    <h3>Why it matters</h3>
+    <ul>
+      <li>Clear disclosures and consistent explanations</li>
+      <li>Timely access to records</li>
+      <li>Customer complaint handling expectations</li>
+    </ul>
+
+    <h3>Evidence pointers</h3>
+    <ul>
+      <li>Exhibit: [Add exhibit title/ID here]</li>
+      <li>Exhibit: [Add exhibit title/ID here]</li>
+      <li>Exhibit: [Add exhibit title/ID here]</li>
+    </ul>
+
+    <p class="note">Agency lens: SEC / FINRA / State</p>
+  </section>
+
+  <section id="issue-06" class="section">
+    <h2>Issue 6 — Incentives / Match / Promotions</h2>
+    <h3>Issue statement</h3>
+    <p>
+      Placeholder: summarize the promotion/match offer, what was represented, what was applied,
+      and what statements/screenshots show.
+    </p>
+
+    <h3>Why it matters</h3>
+    <ul>
+      <li>Truth-in-advertising / fairness concerns (high-level)</li>
+      <li>Disclosure clarity and eligibility rules</li>
+      <li>Customer reporting consistency</li>
+    </ul>
+
+    <h3>Evidence pointers</h3>
+    <ul>
+      <li>Exhibit: [Add exhibit title/ID here]</li>
+      <li>Exhibit: [Add exhibit title/ID here]</li>
+      <li>Exhibit: [Add exhibit title/ID here]</li>
+    </ul>
+
+    <p class="note">Agency lens: State / SEC</p>
+  </section>
+
+  <p class="footer">
+    This page contains summaries only. Underlying documents are maintained separately and are not hosted publicly.
+  </p>
+
+</main>
 </body>
 </html>
+
